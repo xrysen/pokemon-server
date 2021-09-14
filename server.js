@@ -35,7 +35,7 @@ let pokemon = {
 };
 
 app.get("/", (req, res) => {
-  const id = Math.floor(Math.random() * 50) + 1;
+  const id = Math.floor(Math.random() * 150) + 1;
   axios
     .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
     .then((result) => {
